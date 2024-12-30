@@ -33,7 +33,15 @@ const ProductSchema = new mongoose.Schema({
       'Bộ',
       'Cây',
       'Túi',
-      'Hủ'
+      'Hủ',
+      'Sợi',
+      'Tấm',
+      'M',
+      'Bóng',
+      'Lít',
+      'Chai',
+      'Thùng',
+      'Gói'
     ]
   },
   category: {
