@@ -508,7 +508,8 @@ const VALID_UNITS = [
   'Cây',
   'Túi',
   'Hủ',
-  "Lon"
+  "Lon",
+  "Đôi"
 ];
 
 // Thêm route mới cho bulk import
