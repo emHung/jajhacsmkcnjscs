@@ -42,7 +42,8 @@ const ProductSchema = new mongoose.Schema({
       'Chai',
       'Thùng',
       'Gói',
-      'Lon'
+      'Lon',
+      'Đôi'
     ]
   },
   category: {
