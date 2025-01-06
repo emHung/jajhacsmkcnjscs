@@ -43,9 +43,13 @@ const ProductSchema = new mongoose.Schema({
       'Thùng',
       'Gói',
       'Lon',
+<<<<<<< HEAD
       'Đôi',
       'G',
       'Gam'
+=======
+      'Đôi'
+>>>>>>> 183dbce070c79ac22fd24b9714047b1af4da5686
     ]
   },
   category: {
