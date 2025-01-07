@@ -45,7 +45,9 @@ const ProductSchema = new mongoose.Schema({
       'Lon',
       'Đôi',
       'G',
-      'Gam'
+      'Gam',
+      'Típ',
+      'Vĩ'
     ]
   },
   category: {
