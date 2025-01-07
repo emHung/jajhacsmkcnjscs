@@ -117,12 +117,13 @@ router.post('/', auth, admin, upload.single('image'), async (req, res) => {
     console.log(req.body);
     console.log('==================');
 
-    const { name, price } = req.body;
+    const { name, price, unit } = req.body;
 
     // Kiểm tra các trường bắt buộc
     const requiredFields = {
       name: name,
-      price: price
+      price: price,
+      unit: unit
     };
 
     const missingFields = Object.entries(requiredFields)
@@ -136,7 +137,8 @@ router.post('/', auth, admin, upload.single('image'), async (req, res) => {
         missingFields: missingFields,
         requiredFields: [
           'name (Tên sản phẩm)',
-          'price (Giá bán)'
+          'price (Giá bán)',
+          'unit (Đơn vị tính)'
         ]
       });
     }
@@ -168,7 +170,7 @@ router.post('/', auth, admin, upload.single('image'), async (req, res) => {
       price: Number(price),
       import_price: Number(req.body.import_price),
       category: req.body.category || null,
-      unit: req.body.unit || 'Cái',
+      unit: unit,
       image: {
         url: null,
         publicId: null
