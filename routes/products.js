@@ -43,6 +43,7 @@ router.get('/search', async (req, res) => {
       _id: product._id,
       name: product.name,
       price: product.price,
+      unit: product.unit,
       description: product.description,
       category: product.category?.name || 'Chưa phân loại',
       image: product.image?.url || null
