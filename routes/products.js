@@ -510,7 +510,9 @@ const VALID_UNITS = [
   'Hủ',
   "Đôi",
   "G",
-  "Gam"
+  "Gam",
+  "Típ",
+  "Vĩ"
 ];
 
 // Thêm route mới cho bulk import
