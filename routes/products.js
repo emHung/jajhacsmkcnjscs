@@ -34,7 +34,7 @@ router.get('/search', async (req, res) => {
       ]
     })
     .populate('category', 'name')
-    .select('name price image description category')
+    .select('name price unit image description category') // Thêm unit vào đây
     .limit(10);
 
     console.log('Search results:', products);
